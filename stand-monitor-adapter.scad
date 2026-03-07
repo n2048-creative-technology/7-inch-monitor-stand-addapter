@@ -37,7 +37,7 @@ linear_extrude(1.5) circle(d=45);
 module top(){
     difference(){
         cylinder(d=33,h=75+3);
-        translate([0,0,-0.01])cylinder(d1=26,d2=22,h=75);
+        translate([0,0,-0.01])cylinder(d1=27,d2=23,h=75);
         cylinder(d=5,h=200,center=true);
         
         hull(){
@@ -53,10 +53,10 @@ module plate1(){
     translate([16,0,40])rotate([90,0,90])linear_extrude(4)
     difference(){
         offset(2) offset(-2) square([80,70],center=true);
-        translate([66/2,54/2]) circle(d=3.5);
-        translate([66/2,-54/2]) circle(d=3.5);
-        translate([-66/2,54/2]) circle(d=3.5);
-        translate([-66/2,-54/2]) circle(d=3.5);
+        translate([66/2,54/2]) circle(d=4.5);
+        translate([66/2,-54/2]) circle(d=4.5);
+        translate([-66/2,54/2]) circle(d=4.5);
+        translate([-66/2,-54/2]) circle(d=4.5);
     }
     
     difference(){
@@ -69,7 +69,7 @@ module plate1(){
     translate([0,0,8]) for(i=[0:20:70]) translate([0,0,i]) linear_extrude(3) square(100,center=true);
         
     }
-    translate([0,0,-0.01])cylinder(d1=26,d2=22,h=75);
+    translate([0,0,-0.01])cylinder(d1=27,d2=23,h=75);
         cylinder(d=5,h=200,center=true);
         
         hull(){
@@ -85,23 +85,23 @@ module plate2(){
     translate([16,10,40])rotate([90,0,90])linear_extrude(4)
     rotate(90) difference(){
         offset(2) offset(-2) square([80,70],center=true);
-        translate([66/2,54/2]) circle(d=3.5);
-        translate([66/2,-54/2]) circle(d=3.5);
-        translate([-66/2,54/2]) circle(d=3.5);
-        translate([-66/2,-54/2]) circle(d=3.5);
+        translate([66/2,54/2]) circle(d=4.5);
+        translate([66/2,-54/2]) circle(d=4.5);
+        translate([-66/2,54/2]) circle(d=4.5);
+        translate([-66/2,-54/2]) circle(d=4.5);
     }
     
     difference(){
     intersection(){
     hull(){
-        cylinder(d=33,h=78);
+        cylinder(d=34,h=78);
         linear_extrude(78)
         translate([16,0,40]) square([3,50],center=true);
     }
     translate([0,0,20]) for(i=[0:20:60]) translate([0,0,i]) linear_extrude(3) square(100,center=true);
         
     }
-    translate([0,0,-0.01])cylinder(d1=26,d2=22,h=75);
+    translate([0,0,-0.01])cylinder(d1=27,d2=23,h=75);
         cylinder(d=5,h=200,center=true);
         
         hull(){

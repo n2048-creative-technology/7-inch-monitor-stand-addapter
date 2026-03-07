@@ -2,7 +2,13 @@
 translate([0,50]) 
 bottom();
 
-!translate([0,-50]) 
+translate([0,-50]) 
+union(){
+    top();
+    plate1();
+}
+
+!translate([0,-150]) 
 union(){
     top();
     plate2();
@@ -91,7 +97,7 @@ module plate2(){
         linear_extrude(78)
         translate([16,0,40]) square([3,50],center=true);
     }
-    translate([0,0,8]) for(i=[0:20:70]) translate([0,0,i]) linear_extrude(3) square(100,center=true);
+    translate([0,0,20]) for(i=[0:20:60]) translate([0,0,i]) linear_extrude(3) square(100,center=true);
         
     }
     translate([0,0,-0.01])cylinder(d1=26,d2=22,h=75);

@@ -1,3 +1,4 @@
+$fn=360;
 
 translate([0,50]) 
 bottom();

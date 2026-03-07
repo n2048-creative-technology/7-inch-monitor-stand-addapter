@@ -40,9 +40,14 @@ module top(){
         translate([0,0,-0.01])cylinder(d1=27,d2=23,h=75);
         cylinder(d=5,h=200,center=true);
         
-        hull(){
+hull(){
         translate([0,0,16]) rotate([90,0])cylinder(d=6.5,h=34,center=true);
-        rotate([90,0])cylinder(d=6.5,h=28,center=true);
+        translate([0,0,12]) rotate([90,0])cylinder(d=6.5,h=34,center=true);
+        }
+                hull(){
+        translate([0,0,10]) rotate([90,0])cylinder(d=6.5,h=26,center=true);
+
+        rotate([90,0])cylinder(d=6.5,h=30,center=true);
         }
     }
 }
@@ -72,9 +77,14 @@ module plate1(){
     translate([0,0,-0.01])cylinder(d1=27,d2=23,h=75);
         cylinder(d=5,h=200,center=true);
         
-        hull(){
+       hull(){
         translate([0,0,16]) rotate([90,0])cylinder(d=6.5,h=34,center=true);
-        rotate([90,0])cylinder(d=6.5,h=28,center=true);
+        translate([0,0,12]) rotate([90,0])cylinder(d=6.5,h=34,center=true);
+        }
+                hull(){
+        translate([0,0,10]) rotate([90,0])cylinder(d=6.5,h=26,center=true);
+
+        rotate([90,0])cylinder(d=6.5,h=30,center=true);
         }
     }
 }
@@ -104,9 +114,14 @@ module plate2(){
     translate([0,0,-0.01])cylinder(d1=27,d2=23,h=75);
         cylinder(d=5,h=200,center=true);
         
-        hull(){
+       hull(){
         translate([0,0,16]) rotate([90,0])cylinder(d=6.5,h=34,center=true);
-        rotate([90,0])cylinder(d=6.5,h=28,center=true);
+        translate([0,0,12]) rotate([90,0])cylinder(d=6.5,h=34,center=true);
+        }
+                hull(){
+        translate([0,0,10]) rotate([90,0])cylinder(d=6.5,h=26,center=true);
+
+        rotate([90,0])cylinder(d=6.5,h=30,center=true);
         }
     }
 }
